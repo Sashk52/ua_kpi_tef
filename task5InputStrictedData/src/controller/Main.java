@@ -1,9 +1,9 @@
 package controller;
 
+import model.PersonalInformation;
 
-public class regularExpresions {
-	
-	
+public class Main {
+
 	static String insSurname="Please, enter your surname";
 	static String reqSurname="[A-Z][a-z]+";
 	static String insName="Please, enter your name";
@@ -36,30 +36,16 @@ public class regularExpresions {
 	static String reqBuldNum="\\d{0,3}";
 	static String insFlatNum="Please, enter your flat number";
 	static String reqFlatNum="\\d{1,4}";
-	
-	static String wrongInput="You made wrong input!Try again!";
-	
-	static String [][] invatation={{regularExpresions.insSurname,insName,insMiddeleName,insNickname,insComment,insGroup,insPhoneHomeNum,insModNum,insMobNum2,insEmail,insSkype,insIndex,insCity,insStreet,insBuldNum,insFlatNum},{reqSurname,reqName, reqMiddeleName,reqNickname,reqComment,reqGroup,reqPhoneHomNum,reqModNum,reqMobNum2,reqEmail,reqSkype,reqIndex,reqCity,reqStreet,reqBuldNum,reqFlatNum}};
-	static String [] firstRow={insSurname,insName,insMiddeleName,insNickname,insComment,insGroup,insPhoneHomeNum,insModNum,insMobNum2,insEmail,insSkype,insIndex,insCity,insStreet,insBuldNum,insFlatNum};
-	static String [] secondRow={reqSurname,reqName, reqMiddeleName,reqNickname,reqComment,reqGroup,reqPhoneHomNum,reqModNum,reqMobNum2,reqEmail,reqSkype,reqIndex,reqCity,reqStreet,reqBuldNum,reqFlatNum};
-	static int fRow=firstRow.length;
-	static int sRow=secondRow.length;		
-	
-	static String [] printAllInvitation2(){
-		int i = 0;
-		int j;
-		for(j=0;j<sRow;j++)	
-		for(i=0;i<=1;i++)
-			System.out.println(invatation[0][j]+ invatation[1][j]);
-	return new String [] {invatation[i][j],invatation[i][j]};
+	 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PersonalInformation myInfo=new PersonalInformation();
+		
+
+		//regularExpresions.printAllInvitation2();
+		String [][] invatation={{insSurname,insName,insMiddeleName,insNickname,insComment,insGroup,insPhoneHomeNum,insModNum,insMobNum2,insEmail,insSkype,insIndex,insCity,insStreet,insBuldNum,insFlatNum},{reqSurname,reqName, reqMiddeleName,reqNickname,reqComment,reqGroup,reqPhoneHomNum,reqModNum,reqMobNum2,reqEmail,reqSkype,reqIndex,reqCity,reqStreet,reqBuldNum,reqFlatNum}};
+		myInfo.receivedInformation(invatation);
 	}
-	
-	
-	static void printAllInvitation(){
-    	int i=0;
-    	while(i<invatation.length){
-    		System.out.println(invatation[i]);
-    	i++;
-    	}
-    }
+
 }
+
