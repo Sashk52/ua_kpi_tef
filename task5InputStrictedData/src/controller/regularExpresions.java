@@ -1,6 +1,5 @@
 package controller;
 
-
 public class regularExpresions {
 	
 	
@@ -11,9 +10,9 @@ public class regularExpresions {
 	static String insMiddeleName="Please, enter your middleName";
 	static String reqMiddeleName="[A-Z][a-z]+";
 	static String insNickname="Please, enter your nickname";
-	static String reqNickname="\\w";
+	static String reqNickname="\\w{2,}";
 	static String insComment="Please, enter comment";
-	static String reqComment="\\w";
+	static String reqComment="[a-z]+";
 	static String insGroup="Please, enter your gpoup:for Student insert-'s',Worker'w',PublicServant-'p',Retired-'r'.";
 	static String reqGroup="[s|w|p|r]";
 	static String insPhoneHomeNum="Please, enter your home number";
@@ -23,9 +22,9 @@ public class regularExpresions {
 	static String insMobNum2="Please, enter your another mobile number";//optional
 	static String reqMobNum2="0\\d{9}|";
 	static String insEmail="Please, enter your e-mail";
-	static String reqEmail="[a-z]+@+[a-z]";
-	static String insSkype="Please, enter your name";
-	static String reqSkype="[a-z]";
+	static String reqEmail="[a-z]+@{1}[a-z]{3,8}\\.[a-z]{2,3}";
+	static String insSkype="Please, enter your skype";
+	static String reqSkype="[a-z]+";
 	static String insIndex="Please, enter your index";
 	static String reqIndex="\\d{5}";
 	static String insCity="Please, enter your city";
@@ -39,7 +38,7 @@ public class regularExpresions {
 	
 	static String wrongInput="You made wrong input!Try again!";
 	
-	static String [][] invatation={{regularExpresions.insSurname,insName,insMiddeleName,insNickname,insComment,insGroup,insPhoneHomeNum,insModNum,insMobNum2,insEmail,insSkype,insIndex,insCity,insStreet,insBuldNum,insFlatNum},{reqSurname,reqName, reqMiddeleName,reqNickname,reqComment,reqGroup,reqPhoneHomNum,reqModNum,reqMobNum2,reqEmail,reqSkype,reqIndex,reqCity,reqStreet,reqBuldNum,reqFlatNum}};
+	static String [][] invatation={{insSurname,insName,insMiddeleName,insNickname,insComment,insGroup,insPhoneHomeNum,insModNum,insMobNum2,insEmail,insSkype,insIndex,insCity,insStreet,insBuldNum,insFlatNum},{reqSurname,reqName, reqMiddeleName,reqNickname,reqComment,reqGroup,reqPhoneHomNum,reqModNum,reqMobNum2,reqEmail,reqSkype,reqIndex,reqCity,reqStreet,reqBuldNum,reqFlatNum}};
 	static String [] firstRow={insSurname,insName,insMiddeleName,insNickname,insComment,insGroup,insPhoneHomeNum,insModNum,insMobNum2,insEmail,insSkype,insIndex,insCity,insStreet,insBuldNum,insFlatNum};
 	static String [] secondRow={reqSurname,reqName, reqMiddeleName,reqNickname,reqComment,reqGroup,reqPhoneHomNum,reqModNum,reqMobNum2,reqEmail,reqSkype,reqIndex,reqCity,reqStreet,reqBuldNum,reqFlatNum};
 	static int fRow=firstRow.length;

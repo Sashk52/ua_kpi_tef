@@ -1,9 +1,9 @@
 package controller;
 
 import model.PersonalInformation;
+import view.DisplayInformation;
 
 public class Main {
-
 	static String insSurname="Please, enter your surname";
 	static String reqSurname="[A-Z][a-z]+";
 	static String insName="Please, enter your name";
@@ -36,16 +36,17 @@ public class Main {
 	static String reqBuldNum="\\d{0,3}";
 	static String insFlatNum="Please, enter your flat number";
 	static String reqFlatNum="\\d{1,4}";
-	 
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		PersonalInformation myInfo=new PersonalInformation();
-		
-
+		PersonalInformation myInfo1=new PersonalInformation(){};
 		//regularExpresions.printAllInvitation2();
 		String [][] invatation={{insSurname,insName,insMiddeleName,insNickname,insComment,insGroup,insPhoneHomeNum,insModNum,insMobNum2,insEmail,insSkype,insIndex,insCity,insStreet,insBuldNum,insFlatNum},{reqSurname,reqName, reqMiddeleName,reqNickname,reqComment,reqGroup,reqPhoneHomNum,reqModNum,reqMobNum2,reqEmail,reqSkype,reqIndex,reqCity,reqStreet,reqBuldNum,reqFlatNum}};
-		myInfo.receivedInformation(invatation);
+		String [] myInfo={surname,name,middleName,nickname,comment,group,homeTelNumber,mobTelNumber,mobTelNumber2,eMail,skype,index,city,street,buildingNum,flatNum,fullAdrress};
+		myInfo1.receivedInformation(invatation, myInfo);
+		
 	}
 
 }
+
 
