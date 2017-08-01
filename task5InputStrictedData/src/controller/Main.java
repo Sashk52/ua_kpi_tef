@@ -42,11 +42,8 @@ public class Main {
 		PersonalInformation myInfo1=new PersonalInformation(){};
 		//regularExpresions.printAllInvitation2();
 		String [][] invatation={{insSurname,insName,insMiddeleName,insNickname,insComment,insGroup,insPhoneHomeNum,insModNum,insMobNum2,insEmail,insSkype,insIndex,insCity,insStreet,insBuldNum,insFlatNum},{reqSurname,reqName, reqMiddeleName,reqNickname,reqComment,reqGroup,reqPhoneHomNum,reqModNum,reqMobNum2,reqEmail,reqSkype,reqIndex,reqCity,reqStreet,reqBuldNum,reqFlatNum}};
-		String [] myInfo={surname,name,middleName,nickname,comment,group,homeTelNumber,mobTelNumber,mobTelNumber2,eMail,skype,index,city,street,buildingNum,flatNum,fullAdrress};
-		myInfo1.receivedInformation(invatation, myInfo);
-		
-	}
-
+		myInfo1.receivedInformation(invatation);
+}
 }
 
 
