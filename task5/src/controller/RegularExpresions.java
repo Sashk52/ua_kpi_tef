@@ -2,7 +2,6 @@ package controller;
 
 public class RegularExpresions {
 	
-	
 	static String insSurname="Please, enter your surname";
 	static String reqSurname="[A-Z][a-z]+";
 	static String insName="Please, enter your name";
