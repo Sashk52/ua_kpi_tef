@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="get" action="FlowerServlet">
+<h3>Choose flowers for your bouquet:</h3>
+<table>
+	<tr>
+		<td>Rose<input type="number" name="roseNumber" pattern="[0-9]{1,3}"><br>
+		</td>
+	</tr>
+	<tr>
+		<td>freshness level:
+			<select name="freshness level">
+			<option value="0">VERY_FRESH</option>
+			<option value="1">FRESH</option>
+			<option selected value="2">NO_FRESH</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>length of the stem:
+		<select name="length of the rose stem">
+			<option value="0">LONG</option>
+			<option value="1">MIDDLE</option>
+			<option selected value="2">SHORT</option>
+		</select>
+		</td>
+	</tr>	
+<tr>
+<td>Sunflower<input type="number" name="sunflowerNumber"pattern="\\w{0,3}"><br></td>
+</tr>
+	<tr>
+		<td>freshness level:
+			<select name="freshness level sunflower">
+			<option value="0">VERY_FRESH</option>
+			<option value="1">FRESH</option>
+			<option selected value="2">NO_FRESH</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>length of the stem:
+			<select name="length of the sunflower stem">
+			<option value="0">LONG</option>
+			<option value="1">MIDDLE</option>
+			<option selected value="2">SHORT</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Charmoline<input type="number" name="charmolineNumber"pattern="\d{0,3}"><br>
+	</tr>
+	<tr>
+			<td>freshness level:
+			<select name="freshness level charmoline">
+			<option value="0">VERY_FRESH</option>
+			<option value="1">FRESH</option>
+			<option selected value="2">NO_FRESH</option>
+			</select>
+			</td>
+	</tr>
+	<tr>
+		<td>length of the stem:
+			<select name="length of the charmoline stem">
+			<option value="0">LONG</option>
+			<option value="1">MIDDLE</option>
+			<option selected value="2">SHORT</option>
+			</select>
+		</td>
+	</tr>
+<tr>
+<td>Basket
+<input type="checkbox" name="isBasket" value="TRUE">YES</input><br>
+</td>
+</tr>
+<tr>
+<td>Tape
+<input type="checkbox" name="isTape" value="TRUE">YES</input><br>
+</td>
+</tr>
+<tr>
+<td>Wrapper
+<input type="checkbox" name="isWrapper" value="TRUE">YES<br>
+</td>
+</tr>
+<tr>
+<td align="right" collapse="2"> <input type="submit" value="Confirm order">
+</tr>
+</table>
+</form>
+</body>
+</html>
